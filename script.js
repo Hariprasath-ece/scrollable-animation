@@ -11,7 +11,7 @@ ctx.scale(dpi, dpi);
 
 // Image path
 function currentFrame(index) {
-  return `images/ezgif-frame-${index.toString().padStart(3, "0")}.jpg`;
+  return `Images/ezgif-frame-${index.toString().padStart(3, "0")}.jpg`;
 }
 
 const images = [];
@@ -79,4 +79,5 @@ window.addEventListener("resize", () => {
   canvas.height = window.innerHeight * dpi;
   ctx.scale(dpi, dpi);
   drawImage(images[currentFrameIndex]);
+
 });
